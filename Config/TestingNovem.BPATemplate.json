@@ -1,32 +1,41 @@
 {
-  "name": "Testing Novem",
+  "name": "Exchange Mobile Device Information",
   "style": "Table",
-  "Fields": [
+  "fields": [
     {
-      "name": "Mobiles",
-      "UseExistingInfo": false,
+      "name": "MobileDevices",
+      "API": "Exchange",
+      "command": "Get-MobileDevice",
+      "Parameters": {"DetailLevel": "Full"},
+      "ExtractFields": ["UserDisplayName", "DeviceId", "DeviceModel", "DeviceOS", "DeviceAccessState"],
+      "StoreAs": "JSON",
       "FrontendFields": [
         {
-          "name": "Mailbox Size",
-          "value": "MailboxOverview.MailboxSize",
-          "formatter": "number"
+          "name": "User Display Name",
+          "value": "MobileDevices.UserDisplayName",
+          "formatter": "string"
         },
         {
-          "name": "Last Login Date",
-          "value": "AccountDisabled",
+          "name": "Device ID",
+          "value": "MobileDevices.DeviceId",
+          "formatter": "string"
+        },
+        {
+          "name": "Device Model",
+          "value": "MobileDevices.DeviceModel",
+          "formatter": "string"
+        },
+        {
+          "name": "Device OS",
+          "value": "MobileDevices.DeviceOS",
+          "formatter": "string"
+        },
+        {
+          "name": "Device Access State",
+          "value": "MobileDevices.DeviceAccessState",
           "formatter": "string"
         }
-      ],
-      "StoreAs": "JSON",
-      "API": "Exchange",
-      "ExtractFields": [
-        "UserPrincipalName",
-        "AccountDisabled"
-      ],
-      "Command": "Get-Mailbox",
-      "parameters": {
-        "DetailLevel": "Full"
-      }
+      ]
     }
   ]
 }
