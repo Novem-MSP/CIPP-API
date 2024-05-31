@@ -1,0 +1,32 @@
+{
+  "name": "Testing Novem",
+  "style": "Table",
+  "Fields": [
+    {
+      "name": "Mobiles",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "Mailbox Size",
+          "value": "MailboxOverview.MailboxSize",
+          "formatter": "number"
+        },
+        {
+          "name": "Last Login Date",
+          "value": "AccountDisabled",
+          "formatter": "string"
+        }
+      ],
+      "StoreAs": "JSON",
+      "API": "Exchange",
+      "ExtractFields": [
+        "UserPrincipalName",
+        "AccountDisabled"
+      ],
+      "Command": "Get-Mailbox",
+      "parameters": {
+        "DetailLevel": "Full"
+      }
+    }
+  ]
+}
