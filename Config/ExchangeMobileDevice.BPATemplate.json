@@ -1,6 +1,6 @@
 {
   "name": "Exchange Mobile Device Information",
-  "style": "Table",
+  "style": "Tenant",
   "fields": [
     {
       "name": "MobileDevices",
