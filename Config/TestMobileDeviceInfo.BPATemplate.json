@@ -3,7 +3,7 @@
   "style": "Tenant",
   "Fields": [
     {
-      "name": "Mobile Device",
+      "name": "MobileDevices",
       "UseExistingInfo": false,
       "FrontendFields": [
         {
