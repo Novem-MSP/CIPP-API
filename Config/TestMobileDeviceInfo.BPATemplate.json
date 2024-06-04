@@ -9,27 +9,27 @@
         {
           "name": "UserDisplayName",
           "value": "MobileDevices.UserDisplayName",
-          "formatter": "string"
+          "formatter": "table"
         },
         {
           "name": "Device ID",
           "value": "MobileDevices.DeviceId",
-          "formatter": "string"
+          "formatter": "table"
         },
         {
           "name": "Device Model",
           "value": "MobileDevices.DeviceModel",
-          "formatter": "string"
+          "formatter": "table"
         },
         {
           "name": "Device OS",
           "value": "MobileDevices.DeviceOS",
-          "formatter": "string"
+          "formatter": "table"
         },
         {
           "name": "Device Access State",
           "value": "MobileDevices.DeviceAccessState",
-          "formatter": "string"
+          "formatter": "table"
         }
       ],
       "desc": "",
