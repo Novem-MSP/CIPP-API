@@ -1,0 +1,24 @@
+{
+  "name": "Test2-MobileDeviceInfo",
+  "style": "Tenant",
+  "Fields": [
+    {
+      "name": "MobileDevices",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "UserDisplayName",
+          "value": "MobileDevices.UserDisplayName",
+          "formatter": "table"
+        }
+      ],
+      "desc": "",
+      "StoreAs": "JSON",
+      "API": "Exchange",
+      "ExtractFields": [
+        "UserDisplayName"
+      ],
+      "Command": "Get-MobileDevice"
+    }
+  ]
+}
