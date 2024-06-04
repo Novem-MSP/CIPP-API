@@ -1,18 +1,24 @@
 {
-  "name": "Test2-MobileDeviceInfo",
+  "name": "Test-MobileDeviceInfo",
   "style": "Tenant",
   "Fields": [
     {
       "name": "MobileDevices",
-      "UseExistingInfo": true,
+      "UseExistingInfo": false,
       "FrontendFields": [
         {
-          "name": "ListMailboxMobileDevices",
-          "value": "ListMailboxMobileDevices.clientType",
+          "name": "Device ID",
+          "value": "MobileDevices.DeviceId",
           "formatter": "table"
         }
       ],
-      "desc": ""
+      "desc": "",
+      "StoreAs": "JSON",
+      "API": "Exchange",
+      "ExtractFields": [
+        "DeviceId"
+      ],
+      "Command": "Get-MobileDevice"
     }
   ]
 }
