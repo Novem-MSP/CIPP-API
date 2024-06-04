@@ -9,7 +9,7 @@
         {
           "name": "Device ID",
           "value": "MobileDevices.DeviceId",
-          "formatter": "table"
+          "formatter": "string"
         }
       ],
       "desc": "",
