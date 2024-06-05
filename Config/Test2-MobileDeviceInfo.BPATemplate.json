@@ -5,19 +5,11 @@
     {
       "name": "MobileDevices",
       "UseExistingInfo": false,
-      "FrontendFields": [
-        {
-          "name": "Device ID",
-          "value": "MobileDevices.DeviceId",
-          "formatter": "table"
-        }
-      ],
+      "FrontendFields": [],
       "desc": "",
       "StoreAs": "JSON",
       "API": "Exchange",
-      "ExtractFields": [
-        "DeviceId"
-      ],
+      "ExtractFields": [],
       "Command": "Get-MobileDevice"
     }
   ]
