@@ -1,24 +1,24 @@
 {
-   "name":"Test2-MobileDeviceInfo",
-   "style":"Tenant",
-   "Fields":[
+   "name": "Test2-MobileDeviceInfo",
+   "style": "Tenant",
+   "Fields": [
       {
-         "name":"MobileDevices",
-         "UseExistingInfo":false,
-         "FrontendFields":[
+         "name": "MobileDevices",
+         "UseExistingInfo": false,
+         "FrontendFields": [
             {
-               "name":"devices",
-               "value":"MobileDevices",
-               "formatter":"table"
+               "name": "devices",
+               "value": "MobileDevices",
+               "formatter": "table"
             }
          ],
-         "desc":"",
-         "StoreAs":"JSON",
-         "API":"Exchange",
-         "ExtractFields":[
+         "desc": "",
+         "StoreAs": "JSON",
+         "API": "Exchange",
+         "ExtractFields": [
             "DeviceId"
          ],
-         "Command":"Get-MobileDevice"
+         "Command": "Get-MobileDevice"
       }
    ]
 }
