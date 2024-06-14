@@ -1,31 +1,35 @@
 {
-   "name": "AllMobileDevices",
-   "style": "Tenant",
-   "Fields": [
-      {
-         "name": "MobileDevices",
-         "UseExistingInfo": false,
-         "FrontendFields": [
-            {
-               "name": "devices",
-               "value": "MobileDevices",
-               "formatter": "table"
-            }
-         ],
-         "desc": "List of all mobile devices connected to Exchange",
-         "StoreAs": "JSON",
-         "API": "Exchange",
-         "ExtractFields": [
-            "DeviceId",
-            "DeviceType",
-            "DeviceUserAgent",
-            "DeviceOS",
-            "DeviceModel",
-            "DeviceAccessState",
-            "FirstSyncTime",
-            "LastSuccessSync"
-         ],
-         "Command": "Get-MobileDevice"
-      }
-   ]
+  "name": "AllMobileDevices",
+  "style": "Tenant",
+  "Fields": [
+    {
+      "name": "MobileDevices",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "devices",
+          "value": "MobileDevices",
+          "formatter": "table"
+        }
+      ],
+      "desc": "List of all mobile devices connected to Exchange",
+      "StoreAs": "JSON",
+      "API": "Exchange",
+      "ExtractFields": [
+        "clientVersion",
+        "DeviceAccessState",
+        "DeviceFriendlyName",
+        "DeviceModel",
+        "DeviceOS",
+        "DeviceType",
+        "FirstSyncTime",
+        "LastSyncAttemptTime",
+        "LastSuccessSync",
+        "Status",
+        "deviceID",
+        "Guid"
+      ],
+      "Command": "Get-MobileDevice"
+    }
+  ]
 }
