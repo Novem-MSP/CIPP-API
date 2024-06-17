@@ -7,21 +7,23 @@
       "UseExistingInfo": false,
       "FrontendFields": [
         {
-          "name": "userprincipalname",
-          "value": "userprincipalname",
-          "formatter": "string"
+          "name": "devices",
+          "value": "MobileDevices",
+          "formatter": "table"
         },
         {
-          "name": "clientVersion",
-          "value": "clientVersion",
-          "formatter": "string"
+          "name": "deviceID",
+          "value": "deviceID"
+        }
+        {
+          "name": "DeviceFriendlyName",
+          "value": "DeviceFriendlyName"
         }
       ],
       "desc": "List of all mobile devices connected to Exchange",
       "StoreAs": "JSON",
       "API": "Exchange",
       "ExtractFields": [
-        "userprincipalname",
         "clientVersion",
         "DeviceAccessState",
         "DeviceFriendlyName",
