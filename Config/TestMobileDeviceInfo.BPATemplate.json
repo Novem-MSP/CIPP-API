@@ -9,7 +9,7 @@
         {
           "name": "userprincipalname",
           "value": "userprincipalname",
-          "formatter": "table"
+          "formatter": "string"
         },
         {
           "name": "clientVersion",
