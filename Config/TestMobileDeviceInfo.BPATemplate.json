@@ -7,19 +7,64 @@
       "UseExistingInfo": false,
       "FrontendFields": [
         {
-          "name": "devices",
-          "value": "MobileDevices",
-          "formatter": "table"
+          "name": "userprincipalname",
+          "value": "userprincipalname"
+        },
+        {
+          "name": "clientVersion",
+          "value": "clientVersion",
+          "formatter": "string"
+        },
+        {
+          "name": "DeviceAccessState",
+          "value": "DeviceAccessState"
+        },
+        {
+          "name": "DeviceFriendlyName",
+          "value": "DeviceFriendlyName"
+        },
+        {
+          "name": "DeviceModel",
+          "value": "DeviceModel"
+        },
+        {
+          "name": "DeviceOS",
+          "value": "DeviceOS"
+        },
+        {
+          "name": "DeviceType",
+          "value": "DeviceType"
+        },
+        {
+          "name": "FirstSyncTime",
+          "value": "FirstSyncTime"
+        },
+        {
+          "name": "LastSyncAttemptTime",
+          "value": "LastSyncAttemptTime"
+        },
+        {
+          "name": "LastSuccessSync",
+          "value": "LastSuccessSync"
+        },
+        {
+          "name": "Status",
+          "value": "Status"
         },
         {
           "name": "deviceID",
           "value": "deviceID"
+        },
+        {
+          "name": "Guid",
+          "value": "Guid"
         }
       ],
       "desc": "List of all mobile devices connected to Exchange",
       "StoreAs": "JSON",
       "API": "Exchange",
       "ExtractFields": [
+        "userprincipalname",
         "clientVersion",
         "DeviceAccessState",
         "DeviceFriendlyName",
