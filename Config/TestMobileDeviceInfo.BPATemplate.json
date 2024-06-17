@@ -10,6 +10,10 @@
           "name": "devices",
           "value": "MobileDevices",
           "formatter": "table"
+        },
+        {
+          "name": "deviceID",
+          "value": "deviceID"
         }
       ],
       "desc": "List of all mobile devices connected to Exchange",
