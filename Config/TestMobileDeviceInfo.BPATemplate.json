@@ -112,14 +112,6 @@
           "name": "devices",
           "value": "MobileDevices",
           "formatter": "table"
-        },
-        {
-          "name": "deviceID",
-          "value": "deviceID"
-        },
-        {
-          "name": "DeviceFriendlyName",
-          "value": "DeviceFriendlyName"
         }
       ],
       "desc": "List of all mobile devices connected to Exchange",
