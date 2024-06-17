@@ -14,10 +14,12 @@
         {
           "name": "deviceID",
           "value": "deviceID"
+          "formatter": "table"
         },
         {
           "name": "DeviceFriendlyName",
           "value": "DeviceFriendlyName"
+          "formatter": "table"
         }
       ],
       "desc": "List of all mobile devices connected to Exchange",
