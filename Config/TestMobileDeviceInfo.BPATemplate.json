@@ -8,56 +8,13 @@
       "FrontendFields": [
         {
           "name": "userprincipalname",
-          "value": "userprincipalname"
+          "value": "userprincipalname",
+          "formatter": "table"
         },
         {
           "name": "clientVersion",
           "value": "clientVersion",
           "formatter": "string"
-        },
-        {
-          "name": "DeviceAccessState",
-          "value": "DeviceAccessState"
-        },
-        {
-          "name": "DeviceFriendlyName",
-          "value": "DeviceFriendlyName"
-        },
-        {
-          "name": "DeviceModel",
-          "value": "DeviceModel"
-        },
-        {
-          "name": "DeviceOS",
-          "value": "DeviceOS"
-        },
-        {
-          "name": "DeviceType",
-          "value": "DeviceType"
-        },
-        {
-          "name": "FirstSyncTime",
-          "value": "FirstSyncTime"
-        },
-        {
-          "name": "LastSyncAttemptTime",
-          "value": "LastSyncAttemptTime"
-        },
-        {
-          "name": "LastSuccessSync",
-          "value": "LastSuccessSync"
-        },
-        {
-          "name": "Status",
-          "value": "Status"
-        },
-        {
-          "name": "deviceID",
-          "value": "deviceID"
-        },
-        {
-          "name": "Guid",
-          "value": "Guid"
         }
       ],
       "desc": "List of all mobile devices connected to Exchange",
