@@ -112,7 +112,8 @@
       "StoreAs": "JSON",
       "API": "Exchange",
       "ExtractFields": [
-        "clientVersion",
+        "Id",
+        "ClientVersion",
         "DeviceAccessState",
         "DeviceFriendlyName",
         "DeviceModel",
